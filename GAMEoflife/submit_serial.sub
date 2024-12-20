@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -J serial      
+#SBATCH -o serial_%j.out # 标准输出文件
+#SBATCH -e serial_%j.err # 标准错误文件
+#SBATCH -A m4776             # 项目账号
+#SBATCH -C cpu               # 使用CPU节点
+#SBATCH -c 1                 # 使用单线程
+#SBATCH --qos=debug          # 优先级
+#SBATCH -t 00:30:00          # 作业运行时间
+#SBATCH -N 1                 # 使用一个节点
+#SBATCH -n 1                 # 使用一个任务
+
+srun ./gameoflife -i input.txt -g 100

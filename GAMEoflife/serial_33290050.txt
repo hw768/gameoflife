@@ -1,0 +1,5 @@
+
+Performance Statistics:
+Initialization time: 0.00833909 seconds
+Evolution time for 100 generations: 0.323817 seconds
+Average time per generation: 0.00327087 seconds
